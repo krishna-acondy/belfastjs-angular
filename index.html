@@ -1,0 +1,137 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Angular 101: Building Web Apps with the Angular CLI</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/white.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section class='title-page' data-background='#000000'>
+					<h1>Angular 101</h1>
+					<h4>Building Web Apps with the Angular CLI</h4>
+					<br/><br/>
+					<hr>
+					<h4>Krishna Acondy</h4>
+					<h6>Software Developer</h6>
+					<h6>Philips Digital Pathology Services, Belfast</h6>
+				</section>
+				<section data-background='#ffffff'>
+					<section data-background='#000000'>
+						<h3>The Plan</h3>
+					</section>
+					<section>
+						<ul>
+							<li class="fragment">What is Angular?</li>
+							<li class="fragment">Angular CLI</li>
+							<li class="fragment">Getting set up</li>
+							<li class="fragment">Leveraging CLI features</li>
+							<li class="fragment">Demo</li>
+						</ul>
+					</section>
+				</section>
+				<section>
+					<section data-background='#000000'>
+						<h3>What is Angular?</h3>
+					</section>
+					<section>
+						<p class='fragment'>Client Application Framework</p>
+						<p class='fragment'>HTML, CSS, JS/TS</p>
+						<p class='fragment'>Component-based approach</p>
+						<p class='fragment'>Dependency Injection</p>
+						<p class='fragment'>Bindings and change detection</p>
+					</section>
+				</section>
+				<section>
+					<section data-background='#000000'>
+						<h3>Angular CLI</h3>
+					</section>
+					<section>
+						<p class='fragment'>Command Line Interface for Angular</p>
+						<p class='fragment'>Scaffold project structure</p>
+						<p class='fragment'>Generate components and services</p>
+						<p class='fragment'>Manage webpack configuration</p>
+						<p class='fragment'>Configure build and test tasks</p>
+					</section>
+				</section>
+				<section>
+					<section data-background='#000000'>
+						<h3>Getting set up</h3>
+					</section>
+					<section>
+						<p>Install the Angular CLI using npm</p>
+						<br/>
+						<code>npm install -g @angular/cli</code>
+					</section>
+					<section>
+						<p>Generate a new Angular project</p>
+						<br/>
+						<code>ng new project-name</code>
+					</section>
+					<section>
+						<p>Go!</p><br/>
+						<code>cd new project-name</code>
+						<br/><br/><br/>
+						<code>ng serve</code>
+					</section>
+				</section>
+				<section>
+					<section data-background='#000000'>
+						<h3>Leveraging CLI features</h3>
+					</section>
+					<section>
+						<p class='fragment'>Generate components and services</p>
+						<p class='fragment'>Build your project for different environments</p>
+						<p class='fragment'>Run unit tests with the integrated Karma runner</p>
+						<p class='fragment'>End to End Tests with Protractor</p>
+						<p class='fragment'>Lint source code against configurable rules</p>
+					</section>
+				</section>
+				<section data-background='#000000'>
+					<h2>Demo</h2>
+				</section>
+				<section>
+					<h2>Thank you!</h2>
+					<br/><br/>
+					<h3>: )</h3>
+					<br/><br/>
+					<h3>Questions?</h3>
+				</section>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
